@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "🚀 Starting deployment..."
+echo "Starting deployment..."
 
 # Dừng ứng dụng nếu đang chạy
-echo "🛑 Stopping current app..."
+echo "Stopping current app..."
 pm2 stop nestjs-app || true
 
 # Chạy database migration nếu có (bỏ qua nếu không dùng database)
